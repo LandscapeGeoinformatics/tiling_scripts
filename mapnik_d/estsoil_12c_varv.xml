@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map background-color="rgba(0,0,0,0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"
+    maximum-extent="2422793.91074, 7864951.41992, 3136126.12818, 8330111.68050">
+
+    <Style name="EstSoil_Maaamet_varv" filter-mode="first">
+        <Rule>
+            <Filter>[varv] = 1</Filter>
+            <PolygonSymbolizer fill="#ffe852"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 2</Filter>
+            <PolygonSymbolizer fill="#edeeee"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 3</Filter>
+            <PolygonSymbolizer fill="#cad7d7"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 4</Filter>
+            <PolygonSymbolizer fill="#fff982"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 5</Filter>
+            <PolygonSymbolizer fill="#ffffdf"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 6</Filter>
+            <PolygonSymbolizer fill="#ff8893"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 7</Filter>
+            <PolygonSymbolizer fill="#ffb2fa"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 8</Filter>
+            <PolygonSymbolizer fill="#ffe6fa"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 9</Filter>
+            <PolygonSymbolizer fill="#ede6fa"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 10</Filter>
+            <PolygonSymbolizer fill="#e3bbff"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 11</Filter>
+            <PolygonSymbolizer fill="#cfc8ff"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 12</Filter>
+            <PolygonSymbolizer fill="#edf4d1"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 13</Filter>
+            <PolygonSymbolizer fill="#d5e0a8"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 14</Filter>
+            <PolygonSymbolizer fill="#bbffbb"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 15</Filter>
+            <PolygonSymbolizer fill="#e0e18d"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 16</Filter>
+            <PolygonSymbolizer fill="#96fedc"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 17</Filter>
+            <PolygonSymbolizer fill="#b2ffff"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 18</Filter>
+            <PolygonSymbolizer fill="#f7e8bf"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 19</Filter>
+            <PolygonSymbolizer fill="#ffcea3"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[varv] = 20</Filter>
+            <PolygonSymbolizer fill="#a33a17"/>
+        </Rule>
+
+        <Rule>
+            <PolygonSymbolizer fill="#544646"/>
+        </Rule>
+
+    </Style>
+
+	<Layer name="estsoil" srs="+proj=lcc +lat_1=59.33333333333334 +lat_2=58 +lat_0=57.51755393055556 +lon_0=24 +x_0=500000 +y_0=6375000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs">
+        <StyleName>EstSoil_Maaamet_varv</StyleName>
+        <Datasource>
+            <Parameter name="type">postgis</Parameter>
+            <Parameter name="host">localhost</Parameter>
+            <Parameter name="dbname"></Parameter>
+            <Parameter name="user"></Parameter>
+            <Parameter name="password"></Parameter>
+            <Parameter name="table">geoworkspace.estsoil_eh_v12c</Parameter>
+            <Parameter name="estimate_extent">true</Parameter>
+        </Datasource>
+
+	</Layer>
+</Map>

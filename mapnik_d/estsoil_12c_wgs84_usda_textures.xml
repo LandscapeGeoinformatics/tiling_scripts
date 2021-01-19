@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map background-color="rgba(0,0,0,0)" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs"
+    maximum-extent="2422793.91074, 7864951.41992, 3136126.12818, 8330111.68050">
+
+    <Style name="EstSoil_USDA_textures" filter-mode="first">
+
+        <Rule>
+            <Filter>[lxtype1] = 'S'</Filter>
+            <PolygonSymbolizer fill="#c40411"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'LS'</Filter>
+            <PolygonSymbolizer fill="#f48600"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'SL'</Filter>
+            <PolygonSymbolizer fill="#f3bb40"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'L'</Filter>
+            <PolygonSymbolizer fill="#fff74e"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'SiL'</Filter>
+            <PolygonSymbolizer fill="#51d6b1"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'SiCL'</Filter>
+            <PolygonSymbolizer fill="#30afd2"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'CL'</Filter>
+            <PolygonSymbolizer fill="#2b9ba2"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'C'</Filter>
+            <PolygonSymbolizer fill="#3b7be9"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'HC'</Filter>
+            <PolygonSymbolizer fill="#2b57ba"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'PEAT'</Filter>
+            <PolygonSymbolizer fill="#704701"/>
+        </Rule>
+
+        <Rule>
+            <Filter>[lxtype1] = 'GRAVELS'</Filter>
+            <PolygonSymbolizer fill="#8ca4ad"/>
+        </Rule>
+
+        <Rule>
+            <PolygonSymbolizer fill="#ced6db"/>
+        </Rule>
+
+
+    </Style>
+	<Layer name="estsoil" srs="+proj=longlat +datum=WGS84 +no_defs">
+        <StyleName>EstSoil_USDA_textures</StyleName>
+        <Datasource>
+            <Parameter name="type">ogr</Parameter>
+            <Parameter name="layer">estsoil_12c_4326</Parameter>
+            <Parameter name="base">/media/rocket_gis/kmoch/estsoil-eh_soilmap</Parameter>
+            <Parameter name="file">estsoil_12c_refactored.gpkg</Parameter>
+        </Datasource>
+
+	</Layer>
+</Map>

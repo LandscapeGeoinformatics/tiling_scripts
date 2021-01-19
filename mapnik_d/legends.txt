@@ -1,0 +1,181 @@
+
+Additional style and label options for EstSoil 1.2c Vector Tiles
+
+The current scheme online is the USDA texture classes:
+
+Legend option: "USDA Lõimisklass" (the current scheme)
+
+color attribute: "lxtype1"
+labeling attribute: "lxtype1"
+
+If possible, it would be great to enable the choice to change the labeling and color scheme for the EstSoil-EH 1.2c Vector Tiles layer.
+Two additional schemes here after, basically in same way complementary to the EstSoil-EH (TMS/WMTS) layers like the USDA Texture classes.
+
+
+Legend option: "Ajalooline varv"
+
+color attribute: "varv"
+labeling attribute: "est_soiltype"
+
+varv = 1
+title = "1: LkI LkII LkIII"
+color="#ffe852"
+
+varv = 2
+title = "2: Kr K Kk"
+color="#edeeee"
+
+varv = 3
+title = "3: Kh' Kh''"
+color="#cad7d7"
+
+varv = 4
+title = "4: Kor Ko KI"
+color="#fff982"
+
+varv = 5
+title = "5: L(k)I L(k)II L(k)III, L(), LI LII LIII Ls"
+color="#ffffdf"
+
+varv = 6
+title = "6: LP"
+color="#ff8893"
+
+varv = 7
+title = "7: LPg"
+color="#ffb2fa"
+
+varv = 8
+title = "8: LkIg LkIIg LkIIIg, L(k)Ig L(k)IIg L(k)IIIg, LIg LIIg LIIIg Lsg"
+color="#ffe6fa"
+
+varv = 9
+title = "9: LPG, LkG LG"
+color="#ede6fa"
+
+varv = 10
+title = "10: LG1"
+color="#e3bbff"
+
+varv = 11
+title = "11: S, R"
+color="#cfc8ff"
+
+varv = 12
+title = "12: Krg, Kg Kkg, Korg, Kog KIg"
+color="#edf4d1"
+
+varv = 13
+title = "13: Kh'g Kh''g, Gh' Gh'', Gh1"
+color="#d5e0a8"
+
+varv = 14
+title = "14: Gkr Gk, Gor, Go GI, Gr"
+color="#bbffbb"
+
+varv = 15
+title = "15: Ag, AG AG1, Ar ArG ArG1"
+color="#e0e18d"
+
+varv = 16
+title = "16: Go1 GI1,  Gr1"
+color="#96fedc"
+
+varv = 17
+title = "17: M, AM, Mr"
+color="#b2ffff"
+
+varv = 18
+title = "18: E"
+color="#f7e8bf"
+
+varv = 19
+title = "19: D Dg, DG"
+color="#ffcea3"
+
+varv = 20
+title = "Tx"
+color="#a33a17"
+
+no value or anything else
+title = "no data/not classified"
+color="#544646"
+
+
+Legend option: "WRB mullatüüp"
+
+color attribute: "wrb_main"
+labeling attribute: "wrb_main"
+
+wrb_main = 'CM'
+title = "CM - Cambisols"
+color="#f1740d"
+
+
+wrb_main = 'LV'
+title = "LV - Luvisols"
+color="#df82ba"
+
+
+wrb_main = 'RG'
+title = "RG - Regosols"
+color="#ecb976"
+
+
+wrb_main = 'GL'
+title = "GL - Gleysols"
+color="#7839b3"
+
+
+wrb_main = 'HS'
+title = "HS - Histosols"
+color="#4359d2"
+
+
+wrb_main = 'UM'
+title = "UM - Umbrisols"
+color="#703c29"
+
+
+wrb_main = 'RT'
+title = "RT - Retisols"
+color="#2dd035"
+
+
+wrb_main = 'LP'
+title = "LP - Leptosols"
+color="#858585"
+
+
+wrb_main = 'FL'
+title = "FL - Fluvisols"
+color="#2bf3f9"
+
+
+wrb_main = 'PZ'
+title = "PZ - Podzols"
+color="#88b752"
+
+
+wrb_main = 'TC'
+title = "TC - Technosols"
+color="#d3d3d3"
+
+
+wrb_main = 'AR'
+title = "AR - Arenosols"
+color="#d5b43c"
+
+
+wrb_main = 'VR'
+title = "VR - Vertisols"
+color="#a47158"
+
+
+wrb_main = 'PL'
+title = "PL - Planosols"
+color="#85b66f"
+
+no value or not in list
+title = "no data/not classified"
+color="#ffffff"
